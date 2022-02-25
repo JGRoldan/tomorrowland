@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Space+Mono&display=swap');
+*{
+	margin:0;
+	border:0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  	outline:none;
+	text-align: center;
+}
+:root{
+	--mainTxt:'Raleway', sans-serif;
+	--text: 'Space Mono', monospace;
+	--mainColor: #faf9f8;
+	--txtColor: #2f3037;
+}
+body{
+	height: 100vh;
+	background: url('../images/bg.jpg') no-repeat center / cover;
+	color:var(--mainColor);
+	backdrop-filter: blur(2px);
+}
+h1{
+	font-family: var(--mainTxt);
+	margin: 4rem 0 10rem 0;
+}
+.countDown{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 1rem;
+	font-family: var(--text);
+}
+.countDown > div > h4{
+	font-size: 3rem;
+}
+.fechas{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-family: var(--mainTxt);
+	font-weight: 800;
+	font-size: .6rem;
+}
+.fechas .intro .introFechas{
+	padding: 1rem;
+}
+.fechas .intro .introFechas p{
+	padding: 5px;
+}
+.fechas .intro .introFechas:nth-child(2),
+.fechas .intro .introFechas:nth-child(3)
+{
+	border-top: 1px solid #faf9f886;
+}
+
+@media screen and (min-width: 400px){
+	.fechas{
+		font-size: 1.1rem;
+	}
+	.fechas .intro{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50vh;
+	}
+	.fechas .intro .introFechas:nth-child(2),
+	.fechas .intro .introFechas:nth-child(3)
+	{
+	border-top: none;
+	border-left: 1px solid #faf9f886;
+	}
+}
